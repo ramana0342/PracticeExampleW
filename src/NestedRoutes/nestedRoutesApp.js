@@ -15,6 +15,7 @@ function NestedRoutesApp() {
   
    <Routes>
     <Route path='/' element={<Index/>}>
+    <Route index element={<Home />} />
     <Route path="SighUp" element={<Home/>}/>
     <Route path='login' element={<Login/>}/>
     </Route>

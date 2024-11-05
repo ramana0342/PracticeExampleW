@@ -61,7 +61,7 @@ function Login() {
         e.preventDefault()
         setLoginInputData({Email:"",Password:""})
         window.alert("Login Successfully")
-        navigate("/afterLogin")
+        navigate("/afterLogin/ECommerce")
     }
 
     const emailFun=()=>{
@@ -86,9 +86,9 @@ function Login() {
 
     const btnStatus =()=>{
         if(loginStatus){
-            return <button class="btn btn-primary" type='submit'>SignIn</button>
+            return <button class="btn btn-success" type='submit'>SignIn</button>
         }else{
-            return <button style={{marginTop:"8px"}} type="button" class="btn btn-secondary" disabled>SignIn</button>
+            return <button type="button" style={{marginTop:"20px",cursor:"not-allowed"}} class="btn btn-danger">Warning</button> 
         }
     }
 

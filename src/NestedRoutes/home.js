@@ -28,6 +28,8 @@ function Home() {
                             setUserExistStatus(true)
                      }else{
                         setUserExistStatus(false)
+                        setFindUser()
+                        
                      }
             })
           }
